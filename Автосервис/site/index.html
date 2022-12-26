@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    </head> 
+    <body>
+        
+        <header class="header sticky sticky--top js-header">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#main-page"><img class="menu__item logo" height="50px" src="img/logo.png"></a></li>
+                    <li><a class="menu__item" href="#request">Заявка</a></li>
+                    <li><a class="menu__item" href="#about-us">О нас</a></li>
+                    <li><a class="menu__item" href="#gallery">Галерея</a></li>
+                    <li><a class="menu__item" href="#services">Услуги</a></li>
+                    <li><a class="menu__item" href="#reviews">Отзывы</a></li>
+                    <li><a class="menu__item" href="#FAQ">FAQ</a></li> 
+                    <li><a class="menu__item" href="#contact">Контакты</a></li> 
+                </ul>
+            </div>
+            <div class="grid">       
+                <nav class="navigation">
+                  <ul class="navigation__list navigation__list--inline">
+                    <li class="navigation__item"><a href="#request" class="navigation__link">Заявка</a></li>
+                    <li class="navigation__item"><a href="#about-us" class="navigation__link">О нас</a></li>
+                    <li class="navigation__item"><a href="#gallery" class="navigation__link">Галерея</a></li>
+                    <li class="navigation__item"><a href="#main-page" class="navigation__link navigation__link--is-active" style="background:none; padding-inline: 0; width: 150px"><img height="50px" src="img/logo.png"></a></li>
+                    <li class="navigation__item"><a href="#services" class="navigation__link">Услуги</a></li>
+                    <li class="navigation__item"><a href="#reviews" class="navigation__link">Отзывы</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Контакты</a></li> 
+                  </ul>
+                </nav>
+            </div>
+        </header>   
+        
+        <section id="main-page" class="main-page"> 
+            <div class="overlay">
+                <div class="main-text">
+                    <h1>Автосервис AutoHelp</h1>
+                    <a href="#request"><button class="btn-to-form">Оставить заявку</button></a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section id="request" class="request">
+                <h2>ОСТАВИТЬ ЗАЯВКУ</h2>
+                <button type="submit" class="submit-btns submit-application active">Заявка</button>
+                <button type="submit" class="submit-btns submit-question">Вопросы</button>
+                <form class="form" action="/" method="post">
+                    <img class="request-image" style="width: 30%;" src="img/request.jpg">
+                    <fieldset>
+                    <label> <input name="name" required type="text" placeholder="Ваше имя *"></input></label>
+                    <label> <input name="telegram" type="text" placeholder="Введите телеграмм"></input></label>
+                    <label> <input name="phone" required type="tel" placeholder="Введите телефон *"></input></label>
+                    <label> <input name="car_brend" required type="text" placeholder="Марка машины *"></input></label>
+                    <label> <input name="car_model" required type="text" placeholder="Модель *"></input></label>
+                    <label> <input name="car_code" type="text" placeholder="Код машины"></input></label>
+                    <label class="label-application"> <input name="vin" type="text" placeholder="Vin-номер"></input></label>
+                    <label class="label-application"> <input name="car_year" type="text" placeholder="Год выпуска"></input></label>
+                    <label> <textarea name="description" placeholder="Описание проблемы"></textarea></label>
+                    <p> * — обязательное поле</p>
+                    <label class="buttons"><button classtype="submit" class="nicebutton">Отправить</button> <button type="reset" class="nicebutton">Очистить</button></label>
+                    </fieldset>
+                </form>
+                
+            </section>
+        <section id="about-us" class="about-us"> 
+            <h2>ОБ АВТОСЕРВИСЕ</h2>
+            <p class="slogan">Если вам не безразлична судьба вашего автомобиля и вы цените профессионализм мастеров.</p>
+            <div class="about-us-left-and-right">
+                <div class="about-us__left">
+                    <img class="about-service-photo" src="https://yandex-images.clstorage.net/bIF4H8269/1f0b1f5Xm/wKXvHSCHBxObkxbk1CmjHPfWeOjKxIErQE04jVomuMX0iaA0BHHHl14ZdIWn9Rw0Gvk4s8dUqY_aelrtlGLQ6ojo4mAFtlIq0opyqcxw8l3fo1HQEjQltoTxqFSahmQwXCkoAAQs6s5aQGWIFm0h3Bcg3VKCraheXuJLrV2_eVY8DbLw3YOTcxeHmuytKZ-E4t68yLJ0gU7MKahovq5w_AC1PMhAAM7eY0C58DZQBbRfYP1iTvXQbjo-wwEBpw0u2NVCcCkXLxO7Z6pIDRWjwD6yIPy2lPXe1NnkPGriBJygLajYFDBSbqMwZch6JB3YPwxF_sadqApu2k_xfS8N1jAhriCt0xsTDyMiMFXR29QaTgx8QpgdqlTNkFi6IjjQqGXUSKjYKk6_yHnALjSlKMM82T4yXdD6YrLbbfn36d7IObKUWRvfd7vTKmC1Kfeo9mYESM7QOX4gPXQcKuqgoPyZjCwgCJrmD_QltFb4OVhDEEkqEjF44mLGB7kJD9FqANECcP2nDwuXB_pIWd3TpH42pOSavKUucF2E7MoagMj07Th0hCwe4icgjfB-yC28y4Tpaq6ddMrCGrt5tWuhUjABskRB458Tw3sWlDlNh8SmprxUyrChDphxtBBOrrj0UNmEuOAganKXWGmcVpxFFKOUqV6K0ejiGna_obVr9WbQ9bLADSfXK4sfMvzZnUOUjvogXH7MHaKozRBgcipoJJgBxCikkMI-p6ylGF7UFTSTkMHetl00Eib2F7kF23kOoL2uRD1rFytDC8IovfGjmLZG_ORG4KFeUNGgWFJutISoUdxUsEwuype44RQuAK3Emxy5OgIBzI4eXk9tPeddchz9NiiVX5-Dy5eWqPHZK7B6isQ8rgA1HpjNjLSuWswE_FlAOESwurJfkHF0ZjwNrIf4XRqmQUyO3ip7HbF7-YpAqRrEjb-PY0vj0phRVU-Qoj50MMZ4vXIo3XDsqrI8">
+                </div>
+            
+                <div class="about-us__right">
+                    <p>Качественный ремонт и обслуживание авто залог безопасности и комфорта использования. ABTOHELP — это больше, чем просто замена масла и ремонт тормозов, это полный ремонт автомобиля! Наша автосервисная мастерская выполняет профилактическое обслуживание, общий ремонт и проверки безопасности, чтобы поддерживать ваш автомобиль в хорошей форме. Высококвалифицированные автомеханики, правильно диагностирует и устранят вашу проблему с первого раза.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="gallery" class="gallery">
+            <h2>ФОТОГРАФИИ</h2>
+            <div class="photos">
+                <img class="photo-service" src="img/1.jpg">
+                <img class="photo-service" src="img/2.jpg">
+                <img class="photo-service" src="img/3.jpg">
+                <img class="photo-service" src="img/4.jpg">
+                <img class="photo-service" src="img/5.jpg">
+                <img class="photo-service" src="img/6.jpg">
+                <img class="photo-service" src="img/7.jpg">
+                <img class="photo-service" src="img/8.jpg">
+                <img class="photo-service" src="img/9.jpg">
+                <img class="photo-service" src="img/10.jpg">
+                <img class="photo-service" src="img/11.jpg">
+                <img class="photo-service" src="img/12.jpg">
+            </div>
+        </section>
+        <section id="services" class="services">
+    
+            <div class="h2">
+                <h2>УСЛУГИ</h2>
+            </div>
+            
+            <div class="check-mark">
+                <p>
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена цепи ГРМ</a>
+                </p>
+                <p>
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Диагностика двигателя</a>           
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена масла двигателя</a>
+                </p>  
+                <p>
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена ремня ГРМ</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена свечей</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена двигателя</a>
+                </p>    
+                <p>
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Ремонт турбины</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена троса сцепления</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена шаровой опоры</a>
+                </p>   
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена рулевого наконечника</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена заднего амортизатора</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Заправка кондиционера</a>
+                </p>        
+                <p>
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Сварочные работы</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Замена тормозных колодок</a>
+                </p>    
+                <p>    
+                <img src="img/check-mark.png" width="15" height="15">
+                <a>Промывка топливной системы</a>
+                </p>       
+             </div>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>ОТЗЫВЫ</h2>
+            <div class="reviews-block">
+                <iframe id="reviews-iframe" class="reviews-frame" src="https://yandex.ru/maps-reviews-widget/1477862945?comments">      
+                </iframe>
+            </div>
+        </section>
+        <section id="FAQ" class="faq">
+            <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3>А зачем вам VIN?</h3>
+                    <p>
+                        VIN даёт возможность учитывать не только особенности<br>
+                        комплектации, но и поднять весь архив заводских<br>
+                        данных и кампаний, привязанных именно к вашему<br>
+                        автомобилю. VIN — это основа основ, ваш генотип
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Зачем вам СТС?</h3>
+                    <p>
+                        Там содержаться все необходимые данные на<br>
+                        настоящего владельца автомобиля, с которым мы<br>
+                        вступаем в товарно-денежные отношения. Это элементарная  <br>
+                        идентификация, как предъявление паспорта в банке
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Зачем вам мои права?</h3>
+                    <p>
+                        Мы должны знать, с кем имеем дело. Брать <br>
+                        у каждого паспорт или водительское обязывают<br>
+                        “Правила оказания услуг по техническому обслуживанию<br>
+                        и ремонту автомототранспортных средств”.
+                    </p>
+                </div>
+            
+                <div class="faq-item">
+                    <h3>Со своими запчастями можно?</h3>
+                    <p>
+                        Конечно, но в случае заводского брака или контрафакта<br>
+                        все вопросы решаются только через оценку эксперта в<br>
+                        присутствии представителя магазина, поставившего вам<br>
+                        товар. Гарантия на работы от этого не изменится.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Есть ли комната ожидания?</h3>
+                    <p>
+                        Всенепременно да. С диваном, телевизором и<br>
+                        раслобляющей музыкой, Автоматами с углеводными<br>
+                        баточничакми, напитками и, конечно, ароматным кофе.<br>
+                        В шаговой доступности от мастеров и своих автомобилей.<br>
+
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Есть ли у вас специнструмент?</h3>
+                    <p>
+                        Как только документация гласит, что требуется<br>
+                        специальный инструмент, которого у нас случайно<br>
+                        не оказалось, наш курьер отправляется на центральный<br>
+                        склад и приобретает там необходимый комплект.<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <section id="contact" class="contact-section">
+            <h2>КОНТАКТЫ</h2>
+            <div class="contacts-location">
+                <div class="map" style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/org/avtohelp/1477862945/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">
+                        АвтоHelp
+                    </a>
+                    <a href="https://yandex.ru/maps/54/yekaterinburg/category/auto_repair_shop/184105246/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">
+                        Автосервис, автотехцентр в Екатеринбурге
+                    </a>
+                    <a href="https://yandex.ru/maps/54/yekaterinburg/category/engine_repairs/184106616/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">
+                        Ремонт двигателей в Екатеринбурге
+                    </a>
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCU65DQMtD" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;">
+                    </iframe>
+                </div>
+                
+                <div class="contacts">
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            <h3>Адрес:</h3> <p>г. Екатеринбург, ул. Репина, д. 32</p>
+                        </li>
+                        <li class="contacts-item">
+                            <h3>Телефон:</h3> <p><a href="tel:+73433615226"> +7 (343) 361-52-26</a></p>
+                        </li>
+                        <li class="contacts-item">
+                            <h3>E-mail:</h3> <p><a href="mailto:avtohelp96@bk.ru"> avtohelp96@bk.ru</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+             <div class="row">
+               <div class="footer-col">
+                 <h4>КОНТАКТЫ</h4>
+                 <ul>
+                   <li><a href="tel:+73433615226">+7 (343) 361-52-26</a></li>
+                   <li><a href="tel:+79221815226">+7 (922) 181-52-26</a></li>
+                   <li><a href="mailto:avtohelp96@bk.ru">avtohelp96@bk.ru</a></li>
+                   <li><a href="https://yandex.ru/maps/org/avtohelp/1477862945"> г. Екатеринбург, ул. Репина, д. 32</a></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>ЧАСЫ РАБОТЫ</h4>
+                 <ul>
+                   <li><p>ПН-ПТ: 10:00 - 20:00</p></li>
+                   <li><p>СБ: 10:00 - 19:00</p></li>
+                   <li><p>ВС: выходной</p></li>
+                 </ul>
+               </div>
+               <div class="footer-col">
+                 <h4>НАВИГАЦИЯ</h4>
+                 <ul>
+                   <li><a href="#main-page">Главная</a></li>
+                   <li><a href="#request">Заявка</a></li>
+                   <li><a href="#about-us">О нас</a></li>
+                   <li><a href="#gallery">Галерея</a></li>
+                   <li><a href="#services">Услуги</a></li>
+                   <li><a href="#reviews">Отзывы</a></li>
+                   <li><a href="#FAQ">FAQ</a></li>
+                   <li><a href="#contact">Контакты</a></li> 
+                 </ul>
+               </div>
+               </div>
+             </div>
+            </div>
+         </footer>
+         <script src="scripts/script-form.js"></script>
+         <script src="scripts/script.js"></script>
+         <script src="client.js"></script>
+    </body>
+</html>
